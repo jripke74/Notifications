@@ -23,11 +23,25 @@ class ViewController: UIViewController {
         content.body = "Notification after 10 seconds - Your alert is ready!"
         content.badge = 5
         content.sound = UNNotificationSound(named: "laser.caf")
+        content.userInfo = ["id": 42]
         let imageURL = Bundle.main.url(forResource: "spaceCat1", withExtension: "png")
         let attachment = try! UNNotificationAttachment(identifier: "spaceCat1.png", url: imageURL!, options: nil)
         content.attachments = [attachment]
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
         let request = UNNotificationRequest(identifier: "10.secnond.notification", content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.add(request, withCompletionHandler: nil)
+        notificationCenter.delegate = self
+    }
+}
+
+extension ViewController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print(response.notification.request.content.userInfo)
+        completionHandler()
+    }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("silently handle notification")
+        completionHandler([.alert, .sound])
     }
 }
