@@ -13,6 +13,7 @@
 		8929A7361F39F0C300730221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8929A7351F39F0C300730221 /* Assets.xcassets */; };
 		8929A7391F39F0C300730221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8929A7371F39F0C300730221 /* LaunchScreen.storyboard */; };
 		8929A7411F39F6C000730221 /* laser.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8929A7401F39F6C000730221 /* laser.caf */; };
+		8929A7431F39F7F400730221 /* spaceCat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8929A7421F39F7F400730221 /* spaceCat1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8929A7381F39F0C300730221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8929A73A1F39F0C300730221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8929A7401F39F6C000730221 /* laser.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.caf; sourceTree = "<group>"; };
+		8929A7421F39F7F400730221 /* spaceCat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceCat1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				8929A72E1F39F0C300730221 /* AppDelegate.swift */,
 				8929A7301F39F0C300730221 /* ViewController.swift */,
+				8929A7421F39F7F400730221 /* spaceCat1.png */,
 				8929A7401F39F6C000730221 /* laser.caf */,
 				8929A7321F39F0C300730221 /* Main.storyboard */,
 				8929A7351F39F0C300730221 /* Assets.xcassets */,
@@ -129,6 +132,7 @@
 			files = (
 				8929A7411F39F6C000730221 /* laser.caf in Resources */,
 				8929A7391F39F0C300730221 /* LaunchScreen.storyboard in Resources */,
+				8929A7431F39F7F400730221 /* spaceCat1.png in Resources */,
 				8929A7361F39F0C300730221 /* Assets.xcassets in Resources */,
 				8929A7341F39F0C300730221 /* Main.storyboard in Resources */,
 			);
